@@ -1,3 +1,4 @@
+
 let quotes = [
   `“Be the person you needed when you were younger.”`,
   `“If you want to lift yourself up, lift up someone else.”`,
@@ -8,11 +9,7 @@ let quotes = [
   `“Rise above the storm and you will find the sunshine.”`,
   `“The most courageous act is still to think for yourself. Aloud.”`,
   `“Sometimes life hits you in the head with a brick. Don't lose faith.”`,
-  `“Think like a man of action and act like man of thought.
-  Courage is very important. Like a muscle, it is strengthened by use.”`,
   `“Life is the art of drawing sufficient conclusions from insufficient premises.”`,
-  `“By doubting we come at the truth.
-  A man that hath no virtue in himself, ever envieth virtue in others.”`,
   `“When money speaks, the truth keeps silent.”`,
   `“Better the last smile than the first laughter.”`,
   `“In the morning of life, work; in the midday, give counsel; in the evening, pray.”`,
@@ -38,7 +35,10 @@ let quotes = [
   `“Something I find profoundly humbling is to note that human genius is limited while human stupidity is not.”`,
 ];
 
-let quoteElement = document.getElementById("quotemsg");
-let rand = Math.floor(Math.random() * quotes.length);
-let quote = quotes[rand];
-quoteElement.innerText = quote;
+function quoteset() {
+  let quoteElement = document.getElementById("quotemsg");
+  let rand = Math.floor(Math.random() * quotes.length);
+  let quote = quotes[rand];
+  quoteElement.innerText = quote;
+}
+
