@@ -1,107 +1,139 @@
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hidden {
-    opacity: 0;
-    height: 0;
-    width: 0;
-    margin: 0px;
-    padding: 0px;
-    /* 한국어 테스트 */
+  opacity: 0;
+  height: 0;
+  width: 0;
+  margin: 0px;
+  padding: 0px;
+  /* 한국어 테스트 */
 }
 
 .imager {
-    min-width: 100vw;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .color-fff {
-    color: #fff;
+  color: #fff;
 }
 
 #time {
-    font-size: 1050%;
-    font-weight: 400;
-    margin: 0px;
+  font-size: 1050%;
+  font-weight: 400;
+  margin: 0px;
 }
 
 * {
-    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
+    "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 .poscenter {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    align-items: center;
-    height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  height: auto;
 }
 
 #whatname {
-    color: #fff;
-    font-weight: 400;
-    font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 #inputname {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    padding: 0;
-    border: none;
-    caret-color: white;
-    font-weight: 500;
-    line-height: normal;
-    outline: none;
-    text-align: center;
-    background: none;
-    border-bottom: 3px solid white;
-    font-size: 54px;
-    color: white;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  caret-color: white;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  background: none;
+  border-bottom: 3px solid white;
+  font-size: 54px;
+  color: white;
 }
 
 #whatnamebtn {
-    border: 1.5px solid rgba(255, 255, 255, .7);
-    padding-left: 23px;
-    padding-right: 23px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    background: none;
-    color: white;
-    margin-top: 30px;
-    border-radius: 50px;
-    font-size: 0.9375rem;
-    font-weight: 500;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background: none;
+  color: white;
+  margin-top: 30px;
+  border-radius: 50px;
+  font-size: 0.9375rem;
+  font-weight: 500;
 }
 
 #whatnamebtn:hover {
-    background: white;
-    color: rgb(0, 0, 0);
+  background: white;
+  color: rgb(0, 0, 0);
 }
 
 #inputnamecont {
-    height: 54px;
+  height: 54px;
 }
 
 #whatnamebtncon,
 #whatnamebtn {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #greet {
-    font-size: 54px;
-    font-weight: 500;
-    margin: 0px;
-    width: max-content;
+  font-size: 54px;
+  font-weight: 500;
+  margin: 0px;
+  width: max-content;
+}
+
+#quote {
+  position: fixed;
+  vertical-align: middle;
+  display: inline;
+  height: 60px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(25%);
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.toggle-icon {
+  width: 18px;
+  opacity: 0.5;
+}
+
+.toggle-icon:hover {
+  opacity: 0.8;
+}
+
+#setting {
+  position: absolute;
+  left: 20px;
+  width: max-content;
+  transform: translateY(25%);
 }
