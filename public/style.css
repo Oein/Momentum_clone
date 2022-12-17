@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin: 0px;
+    padding: 0px;
+    /* 한국어 테스트 */
+}
+
+.imager {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+.color-fff {
+    color: #fff;
+}
+
+#time {
+    font-size: 1050%;
+    font-weight: 400;
+    margin: 0px;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.poscenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    height: auto;
+}
+
+#whatname {
+    color: #fff;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+#inputname {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    caret-color: white;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    background: none;
+    border-bottom: 3px solid white;
+    font-size: 54px;
+    color: white;
+}
+
+#whatnamebtn {
+    border: 1.5px solid rgba(255, 255, 255, .7);
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: none;
+    color: white;
+    margin-top: 30px;
+    border-radius: 50px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+#whatnamebtn:hover {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+#inputnamecont {
+    height: 54px;
+}
+
+#whatnamebtncon,
+#whatnamebtn {
+    transition: all 0.3s ease;
+}
+
+#greet {
+    font-size: 54px;
+    font-weight: 500;
+    margin: 0px;
+    width: max-content;
+}
