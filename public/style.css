@@ -52,6 +52,23 @@ body {
   animation-duration: 0.5s;
 }
 
+.searchContainer {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  height: auto;
+  animation-name: poz;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  transition: all 0.2s;
+  padding: 5px 16px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .topSites {
   position: absolute;
   left: 0%;
@@ -62,7 +79,7 @@ body {
   width: 100vw;
   animation-name: poy;
   animation-iteration-count: 1;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 #whatname {
@@ -218,6 +235,21 @@ a {
     top: 60%;
     opacity: 0;
   }
+  66.6% {
+    top: 60%;
+    opacity: 0;
+  }
+  100% {
+    top: 65%;
+    opacity: 1;
+  }
+}
+
+@keyframes poyx {
+  0% {
+    top: 60%;
+    opacity: 0;
+  }
   50% {
     top: 60%;
     opacity: 0;
@@ -226,4 +258,57 @@ a {
     top: 65%;
     opacity: 1;
   }
+}
+
+@keyframes poz {
+  0% {
+    top: 55%;
+    opacity: 0;
+  }
+  50% {
+    top: 55%;
+    opacity: 0;
+  }
+  100% {
+    top: 60%;
+    opacity: 1;
+  }
+}
+
+#search {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (min-width: 560px) {
+  #search {
+    width: 449px;
+  }
+}
+
+@media (min-width: 672px) {
+  #search {
+    width: 561px;
+  }
+}
+
+@media (max-height: 634px) {
+  .searchContainer {
+    transform: translateX(calc(100vw + 100%));
+  }
+
+  .topSites {
+    animation-name: poyx;
+    animation-duration: 1s;
+  }
+}
+
+.searchContainer:hover,
+.searchContainer:has(#search:focus) {
+  transform: translate(-50%, calc(-50% - 4px));
+  box-shadow: 5px 5px 12px #555;
 }
