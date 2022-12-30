@@ -12,9 +12,10 @@ let imageUrls = ["./bg/b1.jpg", "./bg/b2.png", "./bg/b3.png", "./bg/b4.jpg"];
   }
   `;
     document.getElementById("black").style.opacity = "0";
+    document.getElementById("black").style.transform = "rotate3d(1,0,0,45deg)";
     setTimeout(() => {
       document.getElementById("black").remove();
-    }, 110);
+    }, 410);
   };
   bgImg.src = url;
 
