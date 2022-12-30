@@ -62,7 +62,7 @@ body {
   width: 100vw;
   animation-name: poy;
   animation-iteration-count: 1;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 #whatname {
@@ -161,9 +161,9 @@ body {
   right: 0px;
   top: 0px;
   bottom: 0px;
-  background-color: rgb(50, 50, 50);
+  background-color: #333;
   z-index: 100;
-  transition: all 0.1s;
+  transition: all 0.2s linear;
 }
 
 a {
@@ -215,6 +215,10 @@ a {
 
 @keyframes poy {
   0% {
+    top: 60%;
+    opacity: 0;
+  }
+  50% {
     top: 60%;
     opacity: 0;
   }
