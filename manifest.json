@@ -3,7 +3,7 @@
   "name": "Omentum",
   "short_name": "OMT",
   "version": "1.0.0",
-  "description": "짭멘텀",
+  "description": "Makes new tab page beautifuler!",
   "chrome_url_overrides": {
     "newtab": "public/index.html"
   },
