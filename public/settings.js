@@ -54,8 +54,15 @@ Object.keys(settingsID).forEach((i) => {
   });
 });
 function settingsSH() {
-  if (opened) document.getElementById("settingsPannel").style.opacity = "1";
-  else document.getElementById("settingsPannel").style.opacity = "0";
+  if (opened) {
+    document.getElementById("settingsPannel").style.opacity = "1";
+    document.getElementById("settingsPannel").style.transform =
+      "translateX(0vw)";
+  } else {
+    document.getElementById("settingsPannel").style.opacity = "0";
+    document.getElementById("settingsPannel").style.transform =
+      "translateX(-100vw)";
+  }
 }
 document.getElementById("closebtn").addEventListener("click", () => {
   opened = false;
@@ -65,3 +72,23 @@ document.getElementById("setting").addEventListener("click", () => {
   opened = !opened;
   settingsSH();
 });
+let engineName = {
+  google: "Google",
+  duck: "DuckDuckGo",
+};
+document
+  .getElementById("searchEngineSelector")
+  .addEventListener("change", (e) => {
+    localStorage.setItem("Settings.general.searchEngine", e.target.value);
+    document.querySelector("#search").placeholder = `Search on ${
+      engineName[localStorage.getItem("Settings.general.searchEngine")]
+    }`;
+  });
+if (!localStorage.getItem("Settings.general.searchEngine"))
+  localStorage.setItem("Settings.general.searchEngine", "google");
+document.querySelector("#search").placeholder = `Search on ${
+  engineName[localStorage.getItem("Settings.general.searchEngine")]
+}`;
+document.getElementById("searchEngineSelector").value = localStorage.getItem(
+  "Settings.general.searchEngine"
+);
