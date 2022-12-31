@@ -75,6 +75,14 @@ document.getElementById("setting").addEventListener("click", () => {
 let engineName = {
   google: "Google",
   duck: "DuckDuckGo",
+  naver: "Naver",
+  daum: "Daum",
+  youtube: "YouTube",
+  twitter: "Twitter",
+  stackoverflow: "Stackoverflow",
+  bing: "Bing",
+  nate: "Nate",
+  github: "Github",
 };
 document
   .getElementById("searchEngineSelector")
@@ -92,3 +100,4 @@ document.querySelector("#search").placeholder = `Search on ${
 document.getElementById("searchEngineSelector").value = localStorage.getItem(
   "Settings.general.searchEngine"
 );
+settingsSH();
