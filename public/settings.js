@@ -16,7 +16,7 @@ let settingsElement = {
   ),
 };
 let settingsID = {
-  clock: "Settings.show.click",
+  clock: "Settings.show.clock",
   greet: "Settings.show.greet",
   quote: "Settings.show.quote",
   topSites: "Settings.show.topSites",
