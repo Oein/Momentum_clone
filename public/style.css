@@ -49,7 +49,7 @@ body {
   height: auto;
   animation-name: pox;
   animation-iteration-count: 1;
-  animation-duration: 0.5s;
+  animation-duration: 0.25s;
 }
 
 .searchContainer {
@@ -62,7 +62,7 @@ body {
   height: auto;
   animation-name: poz;
   animation-iteration-count: 1;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   transition: all 0.2s;
   padding: 5px 16px;
   border-radius: 5px;
@@ -79,7 +79,7 @@ body {
   width: 100vw;
   animation-name: poy;
   animation-iteration-count: 1;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 #whatname {
@@ -299,12 +299,12 @@ a {
 
 @media (max-height: 634px) {
   .searchContainer {
-    transform: translateX(calc(100vw + 100%));
+    transform: translate(calc(100vw + 100%), -50%);
   }
 
   .topSites {
     animation-name: poyx;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
   }
 }
 
@@ -318,4 +318,12 @@ a {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
+}
+
+#searchIcon {
+  cursor: pointer;
+}
+
+body {
+  overflow: hidden;
 }
