@@ -27,12 +27,12 @@
         <h1 id="time" class="center color-fff">Loading...</h1>
         <h1 id="greet" class="center color-fff"></h1>
       </div>
-      <div class="searchContainer">
+      <div class="searchContainer" id="scont">
         <img src="./search.svg" id="searchIcon" />
         <input
           id="search"
           required="true"
-          placeholder="Search on google"
+          placeholder="Search on DuckDuckGo"
           autocomplete="off"
         />
       </div>
@@ -52,6 +52,68 @@
         </div>
         <div id="quotemsg"></div>
       </div>
+      <div id="settingsPannel" style="opacity: 0">
+        <div id="settingsLeft" class="settingsW" style="height: 100%">
+          <div style="height: calc(100% - 70px)">
+            <div class="men_">Settings</div>
+            <div class="men_a">General</div>
+          </div>
+          <div style="height: 55px">
+            <a
+              href="https://www.buymeacoffee.com/oein0219l"
+              style="margin-left: 5%"
+            >
+              <img
+                width="90%"
+                src="https://camo.githubusercontent.com/28aae05a0fba45679e8e27d90609601e249b64a5fe30dfef05495de4f4e318d4/68747470733a2f2f63646e2e6275796d6561636f666665652e636f6d2f627574746f6e732f76322f64656661756c742d79656c6c6f772e706e67"
+              />
+            </a>
+          </div>
+        </div>
+        <div id="settingsRight" class="settingsW">
+          <div id="setting.general">
+            <div class="tr">
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox" />
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Show Clock</span>
+              </label>
+            </div>
+            <div class="tr">
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox" />
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Show Greeting</span>
+              </label>
+            </div>
+            <div class="tr">
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox" />
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Show Quotes</span>
+              </label>
+            </div>
+            <div class="tr">
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox" />
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Show Most Visited Site</span>
+              </label>
+            </div>
+            <div class="tr">
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox" />
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Show Search Bar</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="close" id="closebtn">
+          <span id="c1"></span>
+          <span id="c2"></span>
+        </div>
+      </div>
     </div>
 
     <script src="./onceStart.js"></script>
@@ -61,5 +123,6 @@
     <script src="./quote.js"></script>
     <script src="./topSites.js"></script>
     <script src="./search.js"></script>
+    <script src="./settings.js"></script>
   </body>
 </html>

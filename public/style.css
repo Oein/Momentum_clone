@@ -328,3 +328,118 @@ a {
 body {
   overflow: hidden;
 }
+
+#settingsPannel {
+  position: fixed;
+  width: 720px;
+  height: 520px;
+  background-color: white;
+  border-radius: 8px;
+  bottom: 60px;
+  left: 16px;
+  transition: all 0.1s ease-in-out;
+}
+
+.settingsW {
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+}
+
+#settingsLeft {
+  width: 200px;
+  border-right: 1px solid #ccc;
+}
+
+#settingsRight {
+  left: 200px;
+  width: 520px;
+}
+
+.toggle {
+  margin-top: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before,
+.toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: white;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+.men_ {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+.men_a {
+  font-size: 1.3rem;
+  padding-top: 5px;
+  margin-left: 1.5rem;
+  color: #555;
+}
+.close {
+  top: 1.2rem;
+  left: calc(100% - 2rem);
+  font-size: 1.5rem;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+#c1 {
+  transform: rotate(45deg);
+  width: 1.5rem;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+}
+#c2 {
+  transform: rotate(135deg);
+  width: 1.5rem;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+}
