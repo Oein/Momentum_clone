@@ -298,7 +298,7 @@ a {
   }
 }
 
-@media (max-height: 634px) {
+@media (max-height: 650px) {
   .searchContainer {
     transform: translate(calc(100vw + 100%), -50%);
   }
